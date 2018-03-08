@@ -1,3 +1,6 @@
+"""
+Given a string, return a new string where the first and last chars have been exchanged.
+"""
 def front_back(str):
   # update to use str[-1] for last
   if len(str) < 2 :
