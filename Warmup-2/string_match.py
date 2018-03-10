@@ -6,4 +6,11 @@ string_match('abc', 'abc') → 2
 string_match('abc', 'axc') → 0
 """
 
-# ??????????
+def string_match(a, b):
+  count = 0
+  smallest = min(a, b, key=len)
+  for i in range(len(smallest) -1):
+    if a[i:i+2] == b[i:i+2]:
+      count += 1
+  return count
+
